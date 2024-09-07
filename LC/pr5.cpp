@@ -35,7 +35,6 @@ public:
         return constructBSTHelper(preorder, numeric_limits<int>::min(), numeric_limits<int>::max());
     }
 
-    // Helper function to print the tree (in-order traversal)
     void printInorder(Node* node) {
         if (node == nullptr) return;
         printInorder(node->left);
