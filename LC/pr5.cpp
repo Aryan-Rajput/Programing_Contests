@@ -15,6 +15,7 @@ class Solution {
 private:
     int index;
 
+    
     Node* constructBSTHelper(const vector<int>& preorder, int lowerBound, int upperBound) {
         if (index >= preorder.size() || preorder[index] < lowerBound || preorder[index] > upperBound) {
             return nullptr;
