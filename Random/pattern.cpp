@@ -21,7 +21,8 @@ int main()
         maxi--;
         
     }
-    for(int i=1;i<=n;i++){
+    int i = 1;
+    while(i <= n){
         int tr = n;
         for(int j=0;j<n;j++){
             cout<<max(maxi,tr);
@@ -34,6 +35,7 @@ int main()
         }
         cout<<"\n";
         maxi++;
+        i++;
     }
 
     return 0;
