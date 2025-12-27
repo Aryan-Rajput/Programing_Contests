@@ -1,4 +1,3 @@
-
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
@@ -10,16 +9,18 @@ using namespace std;
 #define rall(x) x.rbegin(), x.rend()
 
 void solve() {
-    int n;
-    cin >> n;
-    if(n%2==0){
-        cout<<"Sakurako\n";
-    }
-    else{
-        cout<<"Kosuke\n";
+    string s;
+    cin >> s;
+
+    int cnty = 0;
+    for (char c : s) {
+        if (c == 'Y') cnty++;
     }
 
-    // cout<<n%2==0?"Sakurako":"Kosuke";
+    if (cnty <= 1)
+        cout << "YES\n";
+    else
+        cout << "NO\n";
 }
 
 int main() {

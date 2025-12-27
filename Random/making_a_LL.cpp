@@ -26,7 +26,7 @@ int main(){
     insertatnode(temp,60);
 
     while(temp != nullptr){
-        cout<<temp->data<<endl;
+        cout<<temp->data<<"-->";
         temp= temp->next;
     }
     // cout<<temp->data<<endl;
